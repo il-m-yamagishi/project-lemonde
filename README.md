@@ -1,1 +1,2 @@
-# the-seed-node
+# THE SEED - node
+
