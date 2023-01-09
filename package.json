@@ -1,25 +1,36 @@
 {
-  "name": "the-seed-node",
-  "version": "0.0.1",
-  "description": "node.js based online game system",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/il-m-yamagishi/the-seed-node.git"
-  },
-  "keywords": [
-    "Online",
-    "Game",
-    "MMO",
-    "MO"
-  ],
-  "author": "Masaru Yamagishi <akai_inu@live.jp>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/il-m-yamagishi/the-seed-node/issues"
-  },
-  "homepage": "https://github.com/il-m-yamagishi/the-seed-node#readme"
+    "name": "project-lemonde",
+    "version": "0.0.1",
+    "description": "OSS-based node.js metaverse",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/il-m-yamagishi/project-lemonde.git"
+    },
+    "author": "Masaru Yamagishi <akai_inu@live.jp>",
+    "license": "Apache-2.0",
+    "private": true,
+    "bugs": {
+        "url": "https://github.com/il-m-yamagishi/project-lemonde/issues"
+    },
+    "homepage": "https://github.com/il-m-yamagishi/project-lemonde#readme",
+    "keywords": [
+        "Online",
+        "Game",
+        "MMO",
+        "MO"
+    ],
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@types/express": "^4.17.15",
+        "@types/jest": "^29.2.5",
+        "@types/node": "^18.11.18",
+        "@types/ws": "^8.5.4",
+        "@typescript-eslint/eslint-plugin": "^5.48.1",
+        "@typescript-eslint/parser": "^5.48.1",
+        "eslint": "^8.31.0",
+        "typescript": "~4.9.4",
+        "vite": "^4.0.4"
+    }
 }
