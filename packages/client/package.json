@@ -6,7 +6,10 @@
         "dev": "vite",
         "build": "vite build"
     },
-    "devDependencies": {
+    "dependencies": {
+        "@babylonjs/core": "^5.43.0",
+        "@babylonjs/loaders": "^5.43.0",
+        "@babylonjs/materials": "5.43.0",
         "pepjs": "^0.5.3"
     }
 }
