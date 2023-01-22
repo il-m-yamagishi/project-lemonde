@@ -1,3 +1,7 @@
+/**
+ * @license Apache-2.0
+ */
+
 import { Engine } from '@babylonjs/core/Engines/engine';
 import { Vector3 } from '@babylonjs/core/Maths/math';
 import { CreateSphere } from '@babylonjs/core/Meshes/Builders/sphereBuilder';
