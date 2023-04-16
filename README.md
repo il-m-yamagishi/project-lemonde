@@ -10,5 +10,12 @@ OSS-based node.js metaverse
 
 ## Prerequisites
 
-- docker
-- docker compose v2
+- node.js 18
+- [mkcert](https://github.com/FiloSottile/mkcert)
+
+```bash
+# in host(browser) environment(e.g. PowerShell, cmd, Terminal)
+$ mkcert -install
+$ mkcert "localhost"
+$ cp ./*.pem (to project-lemonde/)
+```

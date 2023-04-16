@@ -48,6 +48,20 @@ async function main(): Promise<void> {
     window.addEventListener('resize', () => {
         engine.resize();
     });
+
+    const ws = new WebSocket('wss://localhost:8080');
+    ws.addEventListener('open', () => {
+        console.log('WebSocket has connected.');
+    });
+    ws.addEventListener('error', console.error);
+    ws.addEventListener('message', (ev) => {
+        console.log(`Data received: ${ev.data}`);
+    });
+    setInterval(() => {
+        if (ws && ws.readyState === ws.OPEN) {
+            ws.send(`hello ${Date.now()}`);
+        }
+    }, 1000);
 }
 
 main().catch(reason => console.error('Uncaught rejection found', reason));
