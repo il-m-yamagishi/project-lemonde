@@ -7,6 +7,6 @@
         "build": "vite build"
     },
     "dependencies": {
-        "@babylonjs/core": "^5.43.0"
+        "@babylonjs/core": "^6.0.0"
     }
 }

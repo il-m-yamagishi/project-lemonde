@@ -4,10 +4,10 @@
  * @copyright Masaru Yamagishi 2022
  */
 
-import { readFile } from "fs/promises";
-import { createServer } from "https";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
+import { readFile } from "node:fs/promises";
+import { createServer } from "node:https";
+import { dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 import { WebSocketServer } from "ws";
 
 async function main() {
@@ -21,13 +21,13 @@ async function main() {
     });
     const wss = new WebSocketServer({ server });
 
-    wss.on('connection', (ws) => {
-        console.log('user connected.');
-        ws.on('error', console.error);
-        ws.on('message', (data) => {
+    wss.on("connection", (ws) => {
+        console.log("user connected.");
+        ws.on("error", console.error);
+        ws.on("message", (data) => {
             console.log(`received: ${data}`);
         });
-        ws.on('close', (code, reason) => {
+        ws.on("close", (code, reason) => {
             console.log(`User disconnected code:${code} reason:${reason}`);
         });
     });
